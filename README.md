@@ -10,7 +10,7 @@
 * 解析注释是为了方便定制一些特殊需求, 有点像golang的structTag
 * Example:
 ```go
-	_sql := `
+_sql := `
 -- Student
 CREATE TABLE IF NOT EXISTS student
 (
@@ -25,8 +25,8 @@ CREATE TABLE IF NOT EXISTS student
     ENGINE = InnoDB
     DEFAULT CHARSET = utf8mb4;
 `
-    // 将上面的建表语句转为CreateTableStmt数据结构
-	stmts, err := ParseSql(_sql)
+// 将上面的建表语句转为CreateTableStmt数据结构
+stmts, err := ParseSql(_sql)
 
 // 解析完成输出的表结构体
 type CreateTableStmt struct {

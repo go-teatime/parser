@@ -1,5 +1,5 @@
 // 精简版 SqlParser (仅支持MySql建表语法)
-package sqltool
+package sqlparser
 
 import (
 	"errors"

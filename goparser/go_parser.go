@@ -1,4 +1,4 @@
-package sqltool
+package goparser
 
 import (
 	"fmt"
@@ -11,10 +11,10 @@ import (
 )
 
 type GoCodeInfo struct {
-	PkgName string
-	Imports []string
-	Structs []GoStruct
-	Funcs   []GoFunc
+	PkgName string     // 包名
+	Imports []string   // import的包
+	Structs []GoStruct // 定义的结构体
+	Funcs   []GoFunc   // 定义的函数
 }
 
 type GoStruct struct {

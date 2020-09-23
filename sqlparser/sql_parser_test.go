@@ -1,4 +1,4 @@
-package sqltool
+package sqlparser
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 
 func TestParseSql(t *testing.T) {
 	_sql := `
--- 学生表
+-- Student
 CREATE TABLE IF NOT EXISTS student
 (
     id        BIGINT(20)       NOT NULL AUTO_INCREMENT, -- this is id
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS student
 
 func TestMyGen(t *testing.T) {
 	_sql := `
--- 学生表
+-- Student
 CREATE TABLE IF NOT EXISTS student
 (
     id        BIGINT(20)       NOT NULL AUTO_INCREMENT, -- this is id
